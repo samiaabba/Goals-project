@@ -84,7 +84,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 mongoose.connect(
-  `mongodb+srv://akif:akif@cluster0.e5jbjbz.mongodb.net/?retryWrites=true&w=majority`,
+  `mongodb://myUser:myPassword@127.0.0.1:27017/?authSource=admin`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
